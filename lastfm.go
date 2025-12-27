@@ -1,28 +1,5 @@
-package main
+package lastfm
 
-import (
-	"encoding/json"
-	"fmt"
-	"net/http"
-	"os"
-	"log"
-)
-
-func main() {
-	if len(os.Args) < 3 {
-		fmt.Printf("Usage: %v <API key> <user>\n", os.Args[0])
-		os.Exit(1)
-	}
-	t, err := GetRecentTrack(os.Args[1], os.Args[2])
-	if err != nil {
-		log.Fatalf("error: %v\n", err)
-	}
-	fmt.Println(t.String())
-
-}
-
-//
-// A findResponse represents the find API response.
 // RecentTracks represents the recent tracks JSON structure
 type RecentTracks struct {
 	RecentTracks struct {
