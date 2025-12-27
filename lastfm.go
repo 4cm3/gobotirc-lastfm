@@ -1,5 +1,11 @@
 package lastfm
 
+import (
+	"encoding/json"
+	"fmt"
+	"net/http"
+)
+
 // RecentTracks represents the recent tracks JSON structure
 type RecentTracks struct {
 	RecentTracks struct {
