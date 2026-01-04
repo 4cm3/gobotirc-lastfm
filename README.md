@@ -1,6 +1,6 @@
 # gobotirc-lastfm
 
-get last track played from `https://www.last.fm/api/show/user.getRecentTracks`
+Get last track played from `https://www.last.fm/api/show/user.getRecentTracks` To be used with https://github.com/StalkR/goircbot
 
 ## usage
 
@@ -20,3 +20,7 @@ func main() {
     }
     fmt.Println(r.String())
 }
+
+## documentation
+
+[![Go Reference](https://pkg.go.dev/badge/github.com/4cm3/gobotirc-lastfm.svg)](https://pkg.go.dev/github.com/4cm3/gobotirc-lastfm)
